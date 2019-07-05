@@ -1,0 +1,25 @@
+files modified:
+
+fckconfig.js
+var _FileBrowserLanguage        = 'php' ;
+var _QuickUploadLanguage        = 'php' ;
+
+------------------------------------------------------------------
+
+editor/filemanager/browser/default/connectors/php/config.php
+require_once(realpath(dirname(__FILE__)."/../../../../../../../../..")."/includes/arvind.inc.php") ;
+
+$Config['Enabled'] = true;
+
+$Config['UserFilesPath'] = SITE_WS_PATH.'/uploaded_files/fck/' ;
+$Config['UserFilesAbsolutePath'] = SITE_FS_PATH.'/uploaded_files/fck/' ;
+
+------------------------------------------------------------------
+
+editor/filemanager/upload/php/config.php
+require_once(realpath(dirname(__FILE__)."/../../../../../../..")."/includes/arvind.inc.php") ;
+
+$Config['Enabled'] = true ;
+
+$Config['UserFilesPath'] = SITE_WS_PATH.'/uploaded_files/fck/' ;
+$Config['UserFilesAbsolutePath'] = SITE_FS_PATH.'/uploaded_files/fck/' ;
